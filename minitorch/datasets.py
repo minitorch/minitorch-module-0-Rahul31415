@@ -21,7 +21,7 @@ class Graph:
     y: List[int]
 
 
-def simple(N: int) -> tuple:
+def simple(N: int) -> Graph:
     """Generate a simple dataset."""
     X = make_pts(N)
     y = []
@@ -31,7 +31,7 @@ def simple(N: int) -> tuple:
     return Graph(N, X, y)
 
 
-def diag(N: int) -> tuple:
+def diag(N: int) -> Graph:
     """Generate a diagonal dataset."""
     X = make_pts(N)
     y = []
@@ -41,7 +41,7 @@ def diag(N: int) -> tuple:
     return Graph(N, X, y)
 
 
-def split(N: int) -> tuple:
+def split(N: int) -> Graph:
     """Generate a split dataset."""
     X = make_pts(N)
     y = []
@@ -51,7 +51,7 @@ def split(N: int) -> tuple:
     return Graph(N, X, y)
 
 
-def xor(N: int) -> tuple:
+def xor(N: int) -> Graph:
     """Generate an XOR dataset."""
     X = make_pts(N)
     y = []
@@ -61,7 +61,7 @@ def xor(N: int) -> tuple:
     return Graph(N, X, y)
 
 
-def circle(N: int) -> tuple:
+def circle(N: int) -> Graph:
     """Generate a circular dataset."""
     X = make_pts(N)
     y = []
@@ -72,7 +72,7 @@ def circle(N: int) -> tuple:
     return Graph(N, X, y)
 
 
-def spiral(N: int) -> tuple:
+def spiral(N: int) -> Graph:
     """Generate a spiral dataset."""
 
     def x(t: float) -> float:
